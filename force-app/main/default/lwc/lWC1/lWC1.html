@@ -1,0 +1,16 @@
+<template>
+    <lightning-card  variant="Narrow"  title="LWC1" >
+        <div class="slds-p-around_small">
+        <template for:each={message} for:item="mess" for:index="index">
+           <li key={mess.Id}>
+                {mess.value}&nbsp;{mess.from} 
+           </li>
+        </template>
+
+        <lightning-input type="text" variant="standard" name="name" label="Enter Values" placeholder="type here..."></lightning-input>
+        <div class="slds-p-vertical_small">
+        <lightning-button variant="brand" label="click" title="titleName" onclick={handleClick}></lightning-button> 
+    </div>
+    </div>
+    </lightning-card>
+</template>

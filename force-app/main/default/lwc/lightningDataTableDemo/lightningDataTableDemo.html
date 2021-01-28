@@ -1,0 +1,12 @@
+<template>
+    <lightning-datatable
+        key-field="id"
+        data={dataList}
+        columns={columnsList}
+        onrowaction={handleRowAction}
+        onrowselection={getSelectedRecords}>
+    </lightning-datatable>
+    <lightning-button variant="base" label="Bulk Delete" 
+                      title="Delete" onclick={handleBulkDelete}>
+    </lightning-button>
+</template>
